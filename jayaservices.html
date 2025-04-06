@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #333;
+            background-size: cover;
+        }
+        /* Navigation menu */
+        nav {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #444;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+        
+        .services-section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Box for services content */
+        .services-container {
+            background-color: #ffffffdd;
+            border-radius: 15px;
+            padding: 40px;
+            border: 2px solid #e0e0e0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .services-section h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .services-section p {
+            color: #777;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+
+        .services-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card h3 {
+            color: #0056b3;
+            margin-bottom: 15px;
+            font-size: 1.25em;
+        }
+
+        .service-card p {
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        /* Overlay for showing more information */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1em;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .service-card:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="Index.html">Home</a> |
+        <a href="jayaservices.html">Our Services</a> |
+        <a href="jayacorporate.html">Corporate Client List</a> |
+        <a href="jayahotel.html">Hospitality Client List</a> |
+        <a href="jayaaboutus.html">About Us</a> |
+        <a href="jayacontactus.html">Contact Us</a> |
+    </nav>
+
+    <!-- Services Section -->
+    <div class="services-section">
+        <div class="services-container">
+            <h2>Our Services</h2>
+            <p>Explore our range of high-quality services crafted to meet your interior needs.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Carpets</h3>
+                    <p>Wide range of carpets for your floor needs.</p>
+                    <div class="overlay">A variety of carpets including PP Carpet tiles, Nylon Carpet tiles, and more.</div>
+                </div>
+                <div class="service-card">
+                    <h3>Artificial Grass & Plants</h3>
+                    <p>Enhance your indoor and outdoor spaces.</p>
+                    <div class="overlay">Artificial grass, plants, and vertical garden options to elevate your spaces.</div>
+                </div>
+                <div class="service-card">
+                    <h3>Wall Decor</h3>
+                    <p>From wallpapers to 3D foam panels.</p>
+                    <div class="overlay">Customized wallpapers, frosted films, 3D PVC panels, and more.</div>
+                </div>
+                <div class="service-card">
+                    <h3>Blinds & Curtains</h3>
+                    <p>Choose from roller blinds, wooden blinds, and more.</p>
+                    <div class="overlay">Offering roller, vertical, wooden blinds, and high-quality laminated options.</div>
+                </div>
+                <div class="service-card">
+                    <h3>Wood & Vinyl Flooring</h3>
+                    <p>Durable, stylish flooring options for any space.</p>
+                    <div class="overlay">Laminated wood, hardwood, LVT vinyl, and engineered flooring solutions.</div>
+                </div>
+                <div class="service-card">
+                    <h3>Wall Cladding</h3>
+                    <p>Elegant cladding options for walls and decks.</p>
+                    <div class="overlay">From WPC wall cladding to IPE deck wood and marble sheets.</div>
+                </div>
+                <div class="service-card">
+                    <h3>Office Furniture</h3>
+                    <p>Modern office furniture to suit your style.</p>
+                    <div class="overlay">Modular office furniture, chairs, and decorative panels for a professional look.</div>
+                </div>
+                <div class="service-card">
+                    <h3>Epoxy & Fabric</h3>
+                    <p>Self-leveling and epoxy solutions for a polished finish.</p>
+                    <div class="overlay">Self-leveling, epoxy, and fabric services to suit various needs.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

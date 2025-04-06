@@ -1,0 +1,365 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Corporate Client List</title>
+        <style>
+            /* Basic Reset */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            /* Navigation Menu */
+            nav {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background-color: #444;
+                color: #fff;
+                text-align: center;
+                padding: 1rem 0;
+                z-index: 1000;
+            }
+
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                margin: 0 1rem;
+                font-weight: bold;
+            }
+
+            nav a:hover {
+                color: #ddd;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                background-color:#333;
+                color: #333;
+                padding-top: 80px; /* Space for fixed nav */
+                padding: 20px;
+            }
+
+            /* Header */
+            header {
+                text-align: center;
+                padding: 20px;
+            }
+
+            header h1 {
+        text-align: center; /* Centers the text horizontally */
+        line-height: 100px; /* Vertically centers the text based on the height of the box */
+        color: #333;
+        background-color: beige;
+        max-width: 1000px;
+        height: 100px;
+        margin: 0 auto; /* Centers the h1 box on the page */
+        border-bottom: 3px solid red; /* Adds a solid red underline */
+    }
+
+            
+
+            /* Client List Section */
+            .client-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .client-card {
+                background-color:lightblue;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                width: 300px;
+                transition: transform 0.3s;
+            }
+
+            .client-card:hover {
+                transform: translateY(-10px);
+            }
+
+            .client-card h2 {
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+            }
+
+            .client-card p {
+                font-size: 1rem;
+                margin-bottom: 5px;
+            }
+
+            /* Responsive Layout */
+            @media (max-width: 768px) {
+                .client-list {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navigation Menu -->
+        <nav>
+            <a href="Index.html">Home</a> |
+            <a href="jayaservices.html">Our Services</a> |
+            <a href="jayacorporate.html">Corporate client list</a> |
+            <a href="jayahotel.html">Hospitality client list</a> |
+            <a href="jayaaboutus.html">About Us</a> |
+            <a href="jayacontactus.html">Contact Us</a> |
+        </nav>
+
+        <header>
+            <h1>Corporate Clients</h1>
+        
+        </header>
+
+        <section class="client-list" id="clientList">
+            <!-- Client cards will be injected here by JavaScript -->
+        </section>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const clients = [
+                    {
+                        name: "ST Microelectronics Pvt Ltd (Phase)",
+                        location: "Greater Noida",
+                        architect: "Thomas Associates",
+                        consultant: "M/s Cushman & Wakefield",
+                        area: "123,000 Sq ft"
+                    },
+                    {
+                        name: "M/s Techspan India Ltd (Phase I)",
+                        location: "Sector-16 Noida",
+                        architect: "Living System Consultants Pvt Ltd",
+                        designer: "M/s Lopez Design Pvt Ltd",
+                        area: "25,000 Sq ft"
+                    },
+                    {
+                        name: "Smith line Beecham Consumer Healthcare",
+                        location: "New Delhi",
+                        architect: "P Narayan & Associates",
+                        consultant: "CBRE",
+                        area: "10,000 Sq ft"
+                    },
+                    {
+                        name: "M/s Safenet Infotech Pvt Ltd",
+                        location: "Sector-127, Noida",
+                        consultant: "Cushman & Wakefield",
+                        area: "25,000 Sq ft"
+                    },
+
+                    {
+                        name: "Free Market",
+                        location: "Gateway Tower, Gurgaon",
+                        consultant: "M/s Cushman & Wakefield",
+                        area: "7,000 Sq ft"
+                    },
+
+    {
+        name: "Indian Railway Finance Corporation",
+
+        location: "New Delhi",
+        consultant: "M/s Rites",
+        area: "20,000 Sq ft"
+    },
+    {
+        name: "Asahi India Safety Galas Ltd",
+        location: "Business Global Park, Gurgaon",
+        consultant: "Innovations",
+        area: "12,500 Sq ft"
+    },
+    {
+        name: "Platinum EDU",
+        location: "Signature Tower, Gurgaon",
+        consultant: "Spazzio",
+        area: "12,000 Sq ft"
+    },
+    {
+        name: "ABN AMRO BANK NV",
+        location: "12th Floor DLF Cyber City, Gurgaon",
+        consultant: "SWVI Architect Pvt Ltd",
+        area: "15,000 Sq ft"
+    },
+    {
+        name: "Flex Industries",
+        location: "Noida",
+        consultant: "M/s Design Plus",
+        area: "20,000 Sq ft"
+    },
+    {
+        name: "Homelinkers E-services Limited",
+        location: "New Delhi",
+        consultant: "M/s Vistaar",
+        area: "17,000 Sq ft"
+    },
+    {
+        name: "Rockland Hotel",
+        location: "Sector 44, Gurgaon",
+        consultant: "",
+        area: "25,000 Sq ft"
+    },
+    {
+        name: "Luminous Schneider",
+        location: "Sector 44, Gurgaon",
+        consultant: "",
+        area: "35,000 Sq ft"
+    },
+
+
+    {
+        name: "Coca Cola",
+        location: "Sector 55, Gurgaon",
+        consultant: "",
+        area: "31,000 Sq ft"
+    },
+    {
+        name: "Olycap",
+        location: "Sector 3, Noida",
+        consultant: "",
+        area: "27,000 Sq ft"
+    },
+    {
+        name: "Kiwitech",
+        location: "Sector 3, Noida",
+        consultant: "",
+        area: "25,000 Sq ft"
+    },
+    {
+        name: "Bharti Airtel",
+        location: "Manesar, Gurgaon",
+        consultant: "",
+        area: "280,000 Sq ft"
+    },
+    {
+        name: "Bharti Airtel",
+        location: "Chandigarh, Punjab",
+        consultant: "",
+        area: "25,000 Sq ft"
+    },
+    {
+        name: "Technovate Data and Services Pvt Ltd",
+        location: "C-79, Okhla Phase-1, New Delhi",
+        consultant: "M/S Design Plus",
+        area: "20,000 Sq ft"
+    },
+    {
+        name: "Interglob Technology Pvt Ltd",
+        location: "InfoTech Tower, Dundahera, Gurgaon (HR)",
+        consultant: "Sulakchham Interiors",
+        area: "36,000 Sq ft"
+    },
+    {
+        name: "Ustech Software",
+        location: "Sector-59, Noida",
+        consultant: "AVA",
+        area: "40,000 Sq ft"
+    },
+    {
+        name: "N GK Projects",
+        location: "Bawal, Rajasthan",
+        consultant: "NRM Interiors",
+        area: "80,400 Sq ft"
+    },
+
+    {
+        name: "City Bank",
+        location: "DLF Square Building, Cyber City, Gurugram",
+        consultant: "BNP Interiors",
+        area: "30,000 Sq ft"
+    },
+    {
+        name: "India Mart",
+        location: "Sector 146, Noida",
+        consultant: "Rajeev Gandhi Associate",
+        area: "151,000 Sq ft"
+    },
+    {
+        name: "Supremo Industries",
+        location: "Raja Rath, Kolkata",
+        consultant: "Wood Crafts Pvt. Ltd",
+        area: "23,000 Sq ft"
+    },
+    {
+        name: "Bharti Airtel",
+        location: "Jalandhar, Punjab",
+        consultant: "Brown Globus",
+        area: "27,000 Sq ft"
+    },
+    {
+        name: "Indigo",
+        location: "Pune, Maharashtra",
+        consultant: "Sulaksham Interiors",
+        area: "76,000 Sq ft"
+    },
+    {
+        name: "ISH Indian School and Hospitality",
+        location: "Vatika City Centre, Manesar, Gurgaon",
+        consultant: "Via Design",
+        pmc: "Hill International",
+        area: "46,000 Sq ft"
+    },
+    {
+        name: "Bharti Airtel",
+        location: "Bangalore",
+        consultant: "Incubis Consultants",
+        contractor: "Acorp Limited",
+        area: "18,000 Sq ft"
+    },
+    {
+        name: "Bharti Airtel",
+        location: "Pune, Maharashtra",
+        consultant: "Incubis Consultants",
+        contractor: "Ambience Interiors",
+        area: "13,000 Sq ft"
+    },
+    {
+        name: "Nalanda Medical College",
+        location: "Nalanda, Bihar",
+        consultant: "RKA",
+        contractor: "Ahluwalia Contractor",
+        area: "16,500 Sq ft"
+    },
+    {
+        name: "SBI Bank",
+        location: "Kolkata, WB",
+        consultant: "Design Plus",
+        contractor: "Ahluwalia Contractor",
+        area: "85,000 Sq ft"
+    },
+    {
+        name: "Joy Co India Ltd",
+        location: "New Delhi",
+        consultant: "M/s Adrianse Group",
+        area: "12,000 Sq ft"
+    },
+    {
+        name: "ST Microelectronics Pvt Ltd (Phase II)",
+        location: "Plot No 1, Knowledge Park III, Greater Noida",
+        consultant: "Thomas Associates",
+        project_consultant: "M/s Cushman & Wakefield",
+        area: "45,000 Sq ft"
+    }
+
+                    // Add more clients as needed
+                ];
+
+                const clientList = document.getElementById('clientList');
+                clientList.innerHTML = clients.map(client => `
+                    <div class="client-card">
+                        <h2>${client.name}</h2>
+                        <p><strong>Location:</strong> ${client.location}</p>
+                        <p><strong>Architect:</strong> ${client.architect}</p>
+                        ${client.consultant ? `<p><strong>Project Consultant:</strong> ${client.consultant}</p>` : ''}
+                        ${client.designer ? `<p><strong>Project Designer:</strong> ${client.designer}</p>` : ''}
+                        <p><strong>Area:</strong> ${client.area}</p>
+                    </div>
+                `).join('');
+            });
+        </script>
+    </body>
+    </html>

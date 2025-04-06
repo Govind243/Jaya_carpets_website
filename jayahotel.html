@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitality Client List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+
+        /* Navigation menu */
+nav {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #444;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+    text-align: center; /* Centers the text horizontally */
+    line-height: 100px; /* Vertically centers the text based on the height of the box */
+    color: #333;
+    background-color: beige;
+    max-width: 1000px;
+    height: 100px;
+    margin: 0 auto; /* Centers the h1 box on the page */
+    border-bottom: 3px solid red; /* Adds a solid red underline */
+}
+
+
+        .client-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .client {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .client:hover {
+            transform: scale(1.02);
+        }
+        .client h2 {
+            margin: 0;
+            font-size: 20px;
+            color: #007BFF;
+        }
+        .client p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #555;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="Index.html">Home</a> |
+        <a href="jayaservices.html">Our Services</a> |
+        <a href="jayacorporate.html">Corporate client list</a>|
+        <a href="jayahotel.html">Hospitality client list</a>|
+        <a href="jayaaboutus.html">About Us</a> |
+        <a href="jayacontactus.html">Contact Us</a>|
+
+    </nav>
+
+<div class="container">
+    <h1>Hospitality Client List</h1>
+    <div class="client-list">
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Crown Plaza Hotels Today Group</h2>
+            <p>Location: Okhla, Phase-2</p>
+            <p class="hidden">Architect: RSP<br>Qty: 20000 sq.ft</p>
+        </div>
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Country Inn Sweets, All Hotels</h2>
+            <p>Location: Multiple</p>
+            <p class="hidden">Architect: Spazzio<br>Qty: 12000 sq.ft</p>
+        </div>
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>ALPS Hotels, Gurgaon</h2>
+            <p>Location: Gurgaon</p>
+            <p class="hidden">Architect: Zarat, Singapore<br>Qty: 16000 sq.ft</p>
+        </div>
+        <!-- Add more clients similarly -->
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Maurya Hotels, Patna</h2>
+            <p>Location: Patna</p>
+            <p class="hidden">Architect: US Studio<br>Qty: 13000 sq.ft</p>
+        </div>
+
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Samrat Hotels, Patna</h2>
+            <p>Location: Patna</p>
+            <p class="hidden">Architect: Sukriti<br>Qty: 40000 sq.ft</p>
+        </div>
+
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Dyansty Hotels, Guhawati</h2>
+            <p>Location: Guhawati</p>
+            <p class="hidden">Architect: ASA Architect<br>Qty: 25000 sq.ft</p>
+        </div>
+
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Hilton Hotels, Janakpuri</h2>
+            <p>Location: Janakpuri</p>
+            <p class="hidden">Architect: Jaiswal & Associates<br>Qty: 7000 sq.ft</p>
+        </div>
+
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Crown plaza (Jackson Group), Rohini</h2>
+            <p>Location: Rohini</p>
+            <p class="hidden">Architect: Kamlesh Pandey & Associates<br>Qty: 40000 sq.ft</p>
+        </div>
+
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Fortune Hotels (EMAAR MGF), Jaipur</h2>
+            <p>Location: Jaipur</p>
+            <p class="hidden">Architect: Indesign<br>Qty: 11000 sq.ft</p>
+        </div>
+
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Om tower, Jaipur</h2>
+            <p>Location: Jaipur</p>
+            <p class="hidden">Architect: DCA Architect<br>Qty: 6000 sq.ft</p>
+        </div>
+         
+
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Holiday In Chandigarh</h2>
+            <p>Location: Chandigarh</p>
+            <p class="hidden">Architect: Zelos Consulting<br>Qty: 15000 sq.ft</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Radisson Hotels</h2>
+            <p>Location: Jalandhar</p>
+            <p class="hidden">Architect: Yatinder Mathoor & Associates<br>Qty: 9000 sq.ft</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Country Inn Suites</h2>
+            <p>Location: Gurgaon</p>
+            <p class="hidden">Architect: Genesis<br>Qty: 14000 sq.ft</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Park Plaza</h2>
+            <p>Location: Gurgaon, Sector-15</p>
+            <p class="hidden">Architect: EL Interiors<br>Qty: 17000 sq.ft</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Clarks Inn</h2>
+            <p>Location: Gurgaon</p>
+            <p class="hidden">Architect: Pradeep Khanna & Associates<br>Qty: 15000 sq.ft</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Country Inn Sweets</h2>
+            <p>Location: Sahibabad</p>
+            <p class="hidden">Architect: Indesign<br>Qty: 5000 sq.ft</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Keshree Hotels (KC Group)</h2>
+            <p>Location: Chandigarh</p>
+            <p class="hidden">Architect: Kushari & Associates<br>Qty: 33000 sq.ft</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Mann Hotels</h2>
+            <p>Location: Guwahati</p>
+            <p class="hidden">Architect: Genesis<br>Qty: 21000 sq.ft</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Ibis Hotel</h2>
+            <p>Location: Gurgaon</p>
+            <p class="hidden">Architect: Not Specified<br>Qty: 3000 sq.ft</p>
+        </div>
+        
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Hyatt Regency</h2>
+            <p>Location: Amritsar</p>
+            <p class="hidden">SPC Flooring<br>Quantity: 25,000 sqft.<br>Carpet<br>Quantity: 15,000 sqft.</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Ramada Plaza</h2>
+            <p>Location: Amritsar</p>
+            <p class="hidden">Consultant: CAG<br>Laminated wooden flooring<br>Quantity: 45,000 sqft.<br>Carpets<br>Quantity: 5,000 sqft.</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Park by Zone</h2>
+            <p>Location: Amritsar (APJ Group)</p>
+            <p class="hidden">Consultant: CAG<br>Laminated wooden flooring<br>Quantity: 35,000 sqft.<br>Carpet<br>Quantity: 15,000 sqft.</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Ramada Plaza</h2>
+            <p>Location: Srinagar</p>
+            <p class="hidden">Consultant: BSGS<br>Laminated flooring<br>Quantity: 20,000 sqft.<br>Carpets<br>Quantity: 4,000 sqft.</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>The Lalit</h2>
+            <p>Location: Khajuraho</p>
+            <p class="hidden">Carpet: Wilton<br>Quantity: 12,000 sqft.</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>The Lalit</h2>
+            <p>Location: New Delhi</p>
+            <p class="hidden">Hand-tufted design carpet<br>Quantity: 17,000 sqft.</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>The Lalit Hotel</h2>
+            <p>Location: Goa</p>
+            <p class="hidden">Axminster carpets<br>Quantity: 35,000 sqft.</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Sarovar Hotel</h2>
+            <p>Location: Amritsar</p>
+            <p class="hidden">Consultant: Paramount<br>Wooden flooring<br>Quantity: 22,000 sqft.<br>Carpet<br>Quantity: 45,000 sqft.</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Taj Sawarna</h2>
+            <p>Location: Amritsar</p>
+            <p class="hidden">Engineer wood<br>Quantity: 15,000 sqft.</p>
+        </div>
+       
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>The Lalit</h2>
+            <p>Location: Jaipur</p>
+            <p class="hidden">Laminated wooden flooring<br>Quantity: 15,000 sqft.<br>Carpet<br>Quantity: 27,000 sqft.</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Radisson Hotel</h2>
+            <p>Location: Faridabad</p>
+            <p class="hidden">Engineer wood<br>Quantity: 25,000 sqft.<br>Carpet<br>Quantity: 12,000 sqft.</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>JW Marriott Hotel</h2>
+            <p>Location: Chandigarh</p>
+            <p class="hidden">Axminster Carpet<br>Quantity: 65,000 sqft.</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>JW Marriott Hotel</h2>
+            <p>Location: Ramnagar, Uttarakhand</p>
+            <p class="hidden">Axminster Carpets<br>Quantity: 23,000 sqft.<br>Engineer wood<br>Quantity: 25,000 sqft.</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Siddharth Basant Continental Hotel</h2>
+            <p>Location: New Delhi</p>
+            <p class="hidden">Hand tufted design carpet<br>Quantity: 18,000 sqft.</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Aman Hotel</h2>
+            <p>Location: Manali</p>
+            <p class="hidden">SPC Flooring<br>Quantity: 15,000 sqft.<br>Carpet<br>Quantity: 18,000 sqft.</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Lemon Tree Hotel</h2>
+            <p>Location: Aerocity, New Delhi</p>
+            <p class="hidden">Nylon Printed Carpet<br>Quantity: 55,000 sqft.<br>Wooden flooring<br>Quantity: 13,000 sqft.</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Crown Plaza</h2>
+            <p>Location: Lucknow, Uttar Pradesh</p>
+            <p class="hidden">Axminster Carpets<br>Quantity: 21,000 sqft.<br>Wooden flooring<br>Quantity: 5,000 sqft.</p>
+        </div>
+        
+        <div class="client" onclick="toggleDetails(this)">
+            <h2>Country Inn Suites</h2>
+            <p>Location: Mussoorie, Uttarakhand</p>
+            <p class="hidden">Hand tufted design carpet<br>Quantity: 7,000 sqft.</p>
+        </div>
+        
+        <!-- Add additional entries as necessary -->
+    </div>
+</div>
+
+<script>
+    function toggleDetails(element) {
+        const details = element.querySelector('.hidden');
+        if (details.style.display === 'none' || !details.style.display) {
+            details.style.display = 'block';
+        } else {
+            details.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

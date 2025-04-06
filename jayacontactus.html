@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image:url(../image/images.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: beige;
+        }
+        /* Navigation Menu Styling */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #444;
+      padding: 1rem 0;
+      text-align: center;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ddd;
+    }
+
+    
+
+        .contact-container {
+            width: 100%;
+            max-width: 600px;
+            background: beige;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-container h2 {
+            text-align: center;
+            color: blue;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        label {
+            color: blue;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 2px solid blue;
+            border-radius: 6px;
+            resize: vertical;
+            font-size: 1rem;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: blue;
+            outline: none;
+            background: #f0f8ff;
+        }
+
+        textarea {
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #4A00E0, #8E2DE2);
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px 0;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: linear-gradient(135deg, #8E2DE2, #4A00E0);
+        }
+
+        .submit-btn:active {
+            background: #4A00E0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="Index.html">Home</a> |
+        <a href="jayaservices.html">Our Services</a> |
+        <a href="jayacorporate.html">Corporate client list</a>|
+        <a href="jayahotel.html">Hospitality client list</a>|
+        <a href="jayaaboutus.html">About Us</a> |
+        <a href="jayacontactus.html">Contact Us</a>|
+
+    </nav>
+
+<div class="contact-container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Write your message here" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+</div>
+
+<script>
+    // Adding JavaScript interactivity
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevents form from refreshing page
+        
+        // Get input values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Basic validation
+        if (name && email && message) {
+            alert(`Thank you, ${name}! Your message has been sent.`);
+            contactForm.reset(); // Clear form
+        } else {
+            alert("Please fill out all fields.");
+        }
+    });
+
+    // Responsive animation for form fields
+    const formElements = document.querySelectorAll('.form-group input, .form-group textarea');
+    formElements.forEach(element => {
+        element.addEventListener('focus', () => {
+            element.style.backgroundColor = '#e3f2fd';
+        });
+        element.addEventListener('blur', () => {
+            element.style.backgroundColor = '';
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Navigation Menu Styling */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #444;
+      padding: 1rem 0;
+      text-align: center;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ddd;
+    }
+
+    /* Body Styling */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image:url(../image/images.jpg);
+      color: #444;
+      min-height: 100vh;
+      padding-top: 80px; /* Offset for the fixed nav */
+    }
+
+    /* Main Container */
+    .about-container {
+      max-width: 900px;
+      width: 90%;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    /* Header Styling */
+    .about-header {
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .about-header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    /* About Content */
+    .about-content {
+      padding: 30px;
+      text-align: justify;
+      line-height: 1.8;
+    }
+
+    /* Team Section */
+    .team-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .team-member {
+      flex: 1 1 200px;
+      max-width: 200px;
+      text-align: center;
+      transition: transform 0.3s ease;
+      background: #f0f0f0;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .team-member:hover {
+      transform: scale(1.05);
+    }
+
+    .team-member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .team-member img:hover {
+      transform: scale(1.1);
+    }
+
+    .team-member h3 {
+      font-size: 1.2rem;
+      margin: 10px 0 5px;
+      color: #333;
+    }
+
+    .team-member p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* Contact Details Section */
+    .contact-details {
+      padding: 30px;
+      background: #f9f9f9;
+      border-top: 1px solid #ddd;
+      text-align: center;
+    }
+
+    .contact-details h2 {
+      font-size: 1.8rem;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    .contact-details p {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .about-container {
+        transform: scale(0.95);
+      }
+
+      .about-header h1 {
+        font-size: 2rem;
+      }
+
+      .team-member {
+        flex: 1 1 150px;
+        max-width: 150px;
+      }
+
+      .team-member h3 {
+        font-size: 1rem;
+      }
+
+      .team-member p {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+    
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="Index.html">Home</a> |
+        <a href="jayaservices.html">Our Services</a> |
+        <a href="jayacorporate.html">Corporate client list</a> |
+        <a href="jayahotel.html">Hospitality client list</a> |
+        <a href="jayaaboutus.html">About Us</a> |
+        <a href="jayacontactus.html">Contact Us</a> |
+    </nav>
+
+  <div class="about-container">
+    <div class="about-header">
+      <h1>About Us</h1>
+    </div>
+    <div class="about-content">
+      <p>Welcome to Jaya Carpets, where we bring spaces to life with elegance, creativity, and quality. Established with a passion for design and a commitment to exceptional customer service, Jaya Carpets has grown to become a trusted name in the interior design industry. We specialize in delivering unique flooring and carpet solutions that transform both residential and commercial spaces into places that inspire comfort and style.</p>
+
+      <p>The cornerstone of our success is our dedication to customer satisfaction. We work closely with clients, including architects, contractors, designers, and homeowners, to understand their vision and bring it to life. Our team of experts is here to guide you in selecting the ideal carpets, rugs, and flooring solutions that meet your unique needs.</p>
+      <p> Jaya Carpets is more than just a supplier; we are partners in design. Our team includes highly trained sales consultants, technical advisors, and skilled designers, all dedicated to providing comprehensive support and guidance from concept to completion. We pride ourselves on our ability to anticipate the latest design trends while also considering the practicality and durability essential to each project.
+
+      </p>
+      <p> Our commitment to excellence is reinforced by our extensive network of distributors and agents across various regions. This ensures that we are always prepared to deliver our products promptly, providing our clients with samples and resources that help them make informed design decisions. We maintain robust relationships with our suppliers, which allows us to offer a wide variety of top-quality carpets and flooring options, carefully sourced to guarantee both luxury and longevity.
+
+      </p>
+      <p> Jaya Carpets understands that every project is a reflection of the client’s style and needs, and we treat each one with the utmost care. Our meticulous attention to detail, paired with a keen understanding of the functional and aesthetic goals of each space, sets us apart in the industry. From initial consultation to final installation, our clients can rely on us for professional advice, tailored solutions, and seamless service.
+
+      </p>
+      <p> We invite you to explore the diverse array of options that Jaya Carpets has to offer and experience the difference that quality craftsmanship, thoughtful design, and dedicated service can make. At Jaya Carpets, we don’t just create interiors; we create spaces that feel like home, workspaces that inspire, and environments that leave a lasting impression.
+      </p>
+    </div>
+    <div class="team-section">
+      <div class="team-member">
+        <img src="https://via.placeholder.com/100" alt="Team Member 1">
+        <h3>JAISHANKAR JHA</h3>
+        <p>FOUNDER & DIRECTOR</p>
+      </div>
+    </div>
+    <div class="contact-details">
+      <h2>Contact Details</h2>
+      <p>Address: 408-A, Sector 91, Faridabad, Haryana</p>
+      <p>Phone: 9711144842</p>
+      <p>Email: infojayacarpets@gmail.com</p>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript for responsive scaling on window resize
+    window.addEventListener('resize', () => {
+      const aboutContainer = document.querySelector('.about-container');
+      if (window.innerWidth < 768) {
+        aboutContainer.style.transform = 'scale(0.9)';
+      } else {
+        aboutContainer.style.transform = 'scale(1)';
+      }
+    });
+  </script>
+</body>
+</html>
